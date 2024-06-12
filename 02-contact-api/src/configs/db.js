@@ -11,11 +11,11 @@ const sequelize = new Sequelize("sqlite:./db.sqlite3");
   } catch (error) {
     console.error("Unable to connect to the database:", error);
   }
-})();
+})(); //* IIFE (Immediately invoked function expression)
 
-sequelize
-  .authenticate()
-  .then(() => console.log("Db connected"))
-  .catch(() => console.log("Db not connected"));
+// sequelize
+//   .authenticate()
+//   .then(() => console.log("Db connected"))
+//   .catch(() => console.log("Db not connected"));
 
 module.exports = { sequelize };

@@ -29,6 +29,6 @@ const Contact = sequelize.define("contacts", {
   },
 });
 
-sequelize.sync();
+// sequelize.sync();
 
 module.exports = Contact;
